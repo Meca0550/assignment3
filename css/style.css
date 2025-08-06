@@ -1,0 +1,118 @@
+/* Reset + Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #1e272e;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* Search Section */
+.search-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  font-size: 1rem;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006ad1;
+}
+
+/* Suggestion section */
+.suggestion {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.suggestion ul {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestion li {
+  display: inline-block;
+  margin: 5px 10px;
+  background: #dfe4ea;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.suggestion li:hover {
+  background: #ced6e0;
+}
+
+/* Movie Card */
+.movie-card {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.movie-card img {
+  max-width: 200px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.movie-card h2 {
+  margin-top: 0;
+}
+
+.movie-card p {
+  line-height: 1.6;
+}
+
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #1e272e;
+  color: white;
+  text-align: center;
+}

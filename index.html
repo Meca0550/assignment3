@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Movie Explorer | OMDb API</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Movie Explorer</h1>
+      <p>Search any movie and get detailed information instantly.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <h2>🔍 Find a Movie</h2>
+      <input type="text" id="movieTitle" placeholder="e.g. Interstellar, Joker, Avengers..." />
+      <button onclick="getMovie()">Search</button>
+    </section>
+
+    <section class="suggestion">
+      <h3>💡 Try Searching:</h3>
+      <ul>
+        <li onclick="searchSuggested('Inception')">Inception</li>
+        <li onclick="searchSuggested('Titanic')">Titanic</li>
+        <li onclick="searchSuggested('The Godfather')">The Godfather</li>
+        <li onclick="searchSuggested('The Dark Knight')">The Dark Knight</li>
+      </ul>
+    </section>
+
+    <section id="movieInfo" class="movie-card">
+      <!-- Movie data will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Movie Explorer. Powered by OMDb API.</p>
+    </div>
+  </footer>
+</body>
+</html>
